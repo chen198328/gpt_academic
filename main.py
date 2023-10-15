@@ -14,7 +14,7 @@ def main():
 
     # 如果WEB_PORT是-1, 则随机选取WEB端口
     PORT = find_free_port() if WEB_PORT <= 0 else WEB_PORT
-    PORT=os.getenv('PORT')
+
     from check_proxy import get_current_version
     from themes.theme import adjust_theme, advanced_css, theme_declaration, load_dynamic_theme
 
