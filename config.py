@@ -71,7 +71,7 @@ TIMEOUT_SECONDS = 30
 
 
 # 网页的端口, -1代表随机端口
-PORT=os.get_env("PORT")
+PORT=os.getenv("PORT")
 WEB_PORT = int(PORT)
 
 
