@@ -38,19 +38,19 @@ def get_crazy_functions():
 
 
     function_plugins = {
-        "虚空终端": {
-            "Group": "对话|编程|学术|智能体",
-            "Color": "stop",
-            "AsButton": True,
-            "Function": HotReload(虚空终端)
-        },
-        "解析整个Python项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": True,
-            "Info": "解析一个Python项目的所有源文件(.py) | 输入参数为路径",
-            "Function": HotReload(解析一个Python项目)
-        },
+        # "虚空终端": {
+        #     "Group": "对话|编程|学术|智能体",
+        #     "Color": "stop",
+        #     "AsButton": True,
+        #     "Function": HotReload(虚空终端)
+        # },
+        # "解析整个Python项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": True,
+        #     "Info": "解析一个Python项目的所有源文件(.py) | 输入参数为路径",
+        #     "Function": HotReload(解析一个Python项目)
+        # },
         "载入对话历史存档（先上传存档或输入路径）": {
             "Group": "对话",
             "Color": "stop",
@@ -71,85 +71,85 @@ def get_crazy_functions():
             "Info": "清除所有缓存文件，谨慎操作 | 不需要输入参数",
             "Function": HotReload(清除缓存)
         },
-        "批量总结Word文档": {
-            "Group": "学术",
-            "Color": "stop",
-            "AsButton": True,
-            "Info": "批量总结word文档 | 输入参数为路径",
-            "Function": HotReload(总结word文档)
-        },
-        "解析整个Matlab项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,
-            "Info": "解析一个Matlab项目的所有源文件(.m) | 输入参数为路径",
-            "Function": HotReload(解析一个Matlab项目)
-        },
-        "解析整个C++项目头文件": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个C++项目的所有头文件(.h/.hpp) | 输入参数为路径",
-            "Function": HotReload(解析一个C项目的头文件)
-        },
-        "解析整个C++项目（.cpp/.hpp/.c/.h）": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个C++项目的所有源文件（.cpp/.hpp/.c/.h）| 输入参数为路径",
-            "Function": HotReload(解析一个C项目)
-        },
-        "解析整个Go项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个Go项目的所有源文件 | 输入参数为路径",
-            "Function": HotReload(解析一个Golang项目)
-        },
-        "解析整个Rust项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个Rust项目的所有源文件 | 输入参数为路径",
-            "Function": HotReload(解析一个Rust项目)
-        },
-        "解析整个Java项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个Java项目的所有源文件 | 输入参数为路径",
-            "Function": HotReload(解析一个Java项目)
-        },
-        "解析整个前端项目（js,ts,css等）": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个前端项目的所有源文件（js,ts,css等） | 输入参数为路径",
-            "Function": HotReload(解析一个前端项目)
-        },
-        "解析整个Lua项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个Lua项目的所有源文件 | 输入参数为路径",
-            "Function": HotReload(解析一个Lua项目)
-        },
-        "解析整个CSharp项目": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "解析一个CSharp项目的所有源文件 | 输入参数为路径",
-            "Function": HotReload(解析一个CSharp项目)
-        },
-        "解析Jupyter Notebook文件": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,
-            "Info": "解析Jupyter Notebook文件 | 输入参数为路径",
-            "Function": HotReload(解析ipynb文件),
-            "AdvancedArgs": True,  # 调用时，唤起高级参数输入区（默认False）
-            "ArgsReminder": "若输入0，则不解析notebook中的Markdown块",  # 高级参数输入区的显示提示
-        },
+        # "批量总结Word文档": {
+        #     "Group": "学术",
+        #     "Color": "stop",
+        #     "AsButton": True,
+        #     "Info": "批量总结word文档 | 输入参数为路径",
+        #     "Function": HotReload(总结word文档)
+        # },
+        # "解析整个Matlab项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,
+        #     "Info": "解析一个Matlab项目的所有源文件(.m) | 输入参数为路径",
+        #     "Function": HotReload(解析一个Matlab项目)
+        # },
+        # "解析整个C++项目头文件": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个C++项目的所有头文件(.h/.hpp) | 输入参数为路径",
+        #     "Function": HotReload(解析一个C项目的头文件)
+        # },
+        # "解析整个C++项目（.cpp/.hpp/.c/.h）": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个C++项目的所有源文件（.cpp/.hpp/.c/.h）| 输入参数为路径",
+        #     "Function": HotReload(解析一个C项目)
+        # },
+        # "解析整个Go项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个Go项目的所有源文件 | 输入参数为路径",
+        #     "Function": HotReload(解析一个Golang项目)
+        # },
+        # "解析整个Rust项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个Rust项目的所有源文件 | 输入参数为路径",
+        #     "Function": HotReload(解析一个Rust项目)
+        # },
+        # "解析整个Java项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个Java项目的所有源文件 | 输入参数为路径",
+        #     "Function": HotReload(解析一个Java项目)
+        # },
+        # "解析整个前端项目（js,ts,css等）": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个前端项目的所有源文件（js,ts,css等） | 输入参数为路径",
+        #     "Function": HotReload(解析一个前端项目)
+        # },
+        # "解析整个Lua项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个Lua项目的所有源文件 | 输入参数为路径",
+        #     "Function": HotReload(解析一个Lua项目)
+        # },
+        # "解析整个CSharp项目": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "解析一个CSharp项目的所有源文件 | 输入参数为路径",
+        #     "Function": HotReload(解析一个CSharp项目)
+        # },
+        # "解析Jupyter Notebook文件": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,
+        #     "Info": "解析Jupyter Notebook文件 | 输入参数为路径",
+        #     "Function": HotReload(解析ipynb文件),
+        #     "AdvancedArgs": True,  # 调用时，唤起高级参数输入区（默认False）
+        #     "ArgsReminder": "若输入0，则不解析notebook中的Markdown块",  # 高级参数输入区的显示提示
+        # },
         "读Tex论文写摘要": {
             "Group": "学术",
             "Color": "stop",
@@ -157,39 +157,39 @@ def get_crazy_functions():
             "Info": "读取Tex论文并写摘要 | 输入参数为路径",
             "Function": HotReload(读文章写摘要)
         },
-        "翻译README或MD": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": True,
-            "Info": "将Markdown翻译为中文 | 输入参数为路径或URL",
-            "Function": HotReload(Markdown英译中)
-        },
-        "翻译Markdown或README（支持Github链接）": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,
-            "Info": "将Markdown或README翻译为中文 | 输入参数为路径或URL",
-            "Function": HotReload(Markdown英译中)
-        },
-        "批量生成函数注释": {
-            "Group": "编程",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "批量生成函数的注释 | 输入参数为路径",
-            "Function": HotReload(批量生成函数注释)
-        },
+        # "翻译README或MD": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": True,
+        #     "Info": "将Markdown翻译为中文 | 输入参数为路径或URL",
+        #     "Function": HotReload(Markdown英译中)
+        # },
+        # "翻译Markdown或README（支持Github链接）": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,
+        #     "Info": "将Markdown或README翻译为中文 | 输入参数为路径或URL",
+        #     "Function": HotReload(Markdown英译中)
+        # },
+        # "批量生成函数注释": {
+        #     "Group": "编程",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "批量生成函数的注释 | 输入参数为路径",
+        #     "Function": HotReload(批量生成函数注释)
+        # },
         "保存当前的对话": {
             "Group": "对话",
             "AsButton": True,
             "Info": "保存当前的对话 | 不需要输入参数",
             "Function": HotReload(对话历史存档)
         },
-        "[多线程Demo]解析此项目本身（源码自译解）": {
-            "Group": "对话|编程",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "多线程解析并翻译此项目的源码 | 不需要输入参数",
-            "Function": HotReload(解析项目本身)
-        },
+        # "[多线程Demo]解析此项目本身（源码自译解）": {
+        #     "Group": "对话|编程",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "多线程解析并翻译此项目的源码 | 不需要输入参数",
+        #     "Function": HotReload(解析项目本身)
+        # },
         "[插件demo]历史上的今天": {
             "Group": "对话",
             "AsButton": True,
@@ -203,12 +203,12 @@ def get_crazy_functions():
             "Info": "精准翻译PDF论文为中文 | 输入参数为路径",
             "Function": HotReload(批量翻译PDF文档)
         },
-        "询问多个GPT模型": {
-            "Group": "对话",
-            "Color": "stop",
-            "AsButton": True,
-            "Function": HotReload(同时问询)
-        },
+        # "询问多个GPT模型": {
+        #     "Group": "对话",
+        #     "Color": "stop",
+        #     "AsButton": True,
+        #     "Function": HotReload(同时问询)
+        # },
         "批量总结PDF文档": {
             "Group": "学术",
             "Color": "stop",
@@ -216,17 +216,17 @@ def get_crazy_functions():
             "Info": "批量总结PDF文档的内容 | 输入参数为路径",
             "Function": HotReload(批量总结PDF文档)
         },
-        "谷歌学术检索助手（输入谷歌学术搜索页url）": {
-            "Group": "学术",
-            "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
-            "Info": "使用谷歌学术检索助手搜索指定URL的结果 | 输入参数为谷歌学术搜索页的URL",
-            "Function": HotReload(谷歌检索小助手)
-        },
+        # "谷歌学术检索助手（输入谷歌学术搜索页url）": {
+        #     "Group": "学术",
+        #     "Color": "stop",
+        #     "AsButton": False,  # 加入下拉菜单中
+        #     "Info": "使用谷歌学术检索助手搜索指定URL的结果 | 输入参数为谷歌学术搜索页的URL",
+        #     "Function": HotReload(谷歌检索小助手)
+        # },
         "理解PDF文档内容 （模仿ChatPDF）": {
             "Group": "学术",
             "Color": "stop",
-            "AsButton": False,  # 加入下拉菜单中
+            "AsButton": True,  # 加入下拉菜单中
             "Info": "理解PDF文档的内容并进行回答 | 输入参数为路径",
             "Function": HotReload(理解PDF文档内容标准文件输入)
         },
@@ -316,35 +316,35 @@ def get_crazy_functions():
     except:
         print('Load function plugin failed')
 
-    try:
-        from crazy_functions.解析项目源代码 import 解析任意code项目
-        function_plugins.update({
-            "解析项目源代码（手动指定和筛选源代码文件类型）": {
-                "Group": "编程",
-                "Color": "stop",
-                "AsButton": False,
-                "AdvancedArgs": True,  # 调用时，唤起高级参数输入区（默认False）
-                "ArgsReminder": "输入时用逗号隔开, *代表通配符, 加了^代表不匹配; 不输入代表全部匹配。例如: \"*.c, ^*.cpp, config.toml, ^*.toml\"",  # 高级参数输入区的显示提示
-                "Function": HotReload(解析任意code项目)
-            },
-        })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.解析项目源代码 import 解析任意code项目
+    #     function_plugins.update({
+    #         "解析项目源代码（手动指定和筛选源代码文件类型）": {
+    #             "Group": "编程",
+    #             "Color": "stop",
+    #             "AsButton": False,
+    #             "AdvancedArgs": True,  # 调用时，唤起高级参数输入区（默认False）
+    #             "ArgsReminder": "输入时用逗号隔开, *代表通配符, 加了^代表不匹配; 不输入代表全部匹配。例如: \"*.c, ^*.cpp, config.toml, ^*.toml\"",  # 高级参数输入区的显示提示
+    #             "Function": HotReload(解析任意code项目)
+    #         },
+    #     })
+    # except:
+    #     print('Load function plugin failed')
 
-    try:
-        from crazy_functions.询问多个大语言模型 import 同时问询_指定模型
-        function_plugins.update({
-            "询问多个GPT模型（手动指定询问哪些模型）": {
-                "Group": "对话",
-                "Color": "stop",
-                "AsButton": False,
-                "AdvancedArgs": True,  # 调用时，唤起高级参数输入区（默认False）
-                "ArgsReminder": "支持任意数量的llm接口，用&符号分隔。例如chatglm&gpt-3.5-turbo&api2d-gpt-4",  # 高级参数输入区的显示提示
-                "Function": HotReload(同时问询_指定模型)
-            },
-        })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.询问多个大语言模型 import 同时问询_指定模型
+    #     function_plugins.update({
+    #         "询问多个GPT模型（手动指定询问哪些模型）": {
+    #             "Group": "对话",
+    #             "Color": "stop",
+    #             "AsButton": False,
+    #             "AdvancedArgs": True,  # 调用时，唤起高级参数输入区（默认False）
+    #             "ArgsReminder": "支持任意数量的llm接口，用&符号分隔。例如chatglm&gpt-3.5-turbo&api2d-gpt-4",  # 高级参数输入区的显示提示
+    #             "Function": HotReload(同时问询_指定模型)
+    #         },
+    #     })
+    # except:
+    #     print('Load function plugin failed')
 
     try:
         from crazy_functions.图片生成 import 图片生成
@@ -362,21 +362,21 @@ def get_crazy_functions():
     except:
         print('Load function plugin failed')
 
-    try:
-        from crazy_functions.总结音视频 import 总结音视频
-        function_plugins.update({
-            "批量总结音视频（输入路径或上传压缩包）": {
-                "Group": "对话",
-                "Color": "stop",
-                "AsButton": False,
-                "AdvancedArgs": True,
-                "ArgsReminder": "调用openai api 使用whisper-1模型, 目前支持的格式:mp4, m4a, wav, mpga, mpeg, mp3。此处可以输入解析提示，例如：解析为简体中文（默认）。",
-                "Info": "批量总结音频或视频 | 输入参数为路径",
-                "Function": HotReload(总结音视频)
-            }
-        })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.总结音视频 import 总结音视频
+    #     function_plugins.update({
+    #         "批量总结音视频（输入路径或上传压缩包）": {
+    #             "Group": "对话",
+    #             "Color": "stop",
+    #             "AsButton": False,
+    #             "AdvancedArgs": True,
+    #             "ArgsReminder": "调用openai api 使用whisper-1模型, 目前支持的格式:mp4, m4a, wav, mpga, mpeg, mp3。此处可以输入解析提示，例如：解析为简体中文（默认）。",
+    #             "Info": "批量总结音频或视频 | 输入参数为路径",
+    #             "Function": HotReload(总结音视频)
+    #         }
+    #     })
+    # except:
+    #     print('Load function plugin failed')
 
     try:
         from crazy_functions.数学动画生成manim import 动画生成
@@ -392,20 +392,20 @@ def get_crazy_functions():
     except:
         print('Load function plugin failed')
 
-    try:
-        from crazy_functions.批量Markdown翻译 import Markdown翻译指定语言
-        function_plugins.update({
-            "Markdown翻译（手动指定语言）": {
-                "Group": "编程",
-                "Color": "stop",
-                "AsButton": False,
-                "AdvancedArgs": True,
-                "ArgsReminder": "请输入要翻译成哪种语言，默认为Chinese。",
-                "Function": HotReload(Markdown翻译指定语言)
-            }
-        })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.批量Markdown翻译 import Markdown翻译指定语言
+    #     function_plugins.update({
+    #         "Markdown翻译（手动指定语言）": {
+    #             "Group": "编程",
+    #             "Color": "stop",
+    #             "AsButton": False,
+    #             "AdvancedArgs": True,
+    #             "ArgsReminder": "请输入要翻译成哪种语言，默认为Chinese。",
+    #             "Function": HotReload(Markdown翻译指定语言)
+    #         }
+    #     })
+    # except:
+    #     print('Load function plugin failed')
 
     try:
         from crazy_functions.Langchain知识库 import 知识库问答
@@ -524,18 +524,18 @@ def get_crazy_functions():
     except:
         print('Load function plugin failed')
 
-    try:
-        from crazy_functions.函数动态生成 import 函数动态生成
-        function_plugins.update({
-            "动态代码解释器（CodeInterpreter）": {
-                "Group": "智能体",
-                "Color": "stop",
-                "AsButton": False,
-                "Function": HotReload(函数动态生成)
-            }
-        })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.函数动态生成 import 函数动态生成
+    #     function_plugins.update({
+    #         "动态代码解释器（CodeInterpreter）": {
+    #             "Group": "智能体",
+    #             "Color": "stop",
+    #             "AsButton": False,
+    #             "Function": HotReload(函数动态生成)
+    #         }
+    #     })
+    # except:
+    #     print('Load function plugin failed')
 
     # try:
     #     from crazy_functions.CodeInterpreter import 虚空终端CodeInterpreter
