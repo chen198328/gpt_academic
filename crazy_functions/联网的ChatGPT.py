@@ -6,12 +6,12 @@ from request_llm.bridge_all import model_info
 
 def google(query, proxies):
     query = query # 在此处替换您要搜索的关键词
-    url = f"https://www.google.com/search?q={query}"
+    url = f"https://cse.google.com/cse?cx=e4ae83331e775404c#gsc.tab=0&gsc.q={query}&gsc.sort="
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'}
     response = requests.get(url, headers=headers, proxies=proxies)
     soup = BeautifulSoup(response.content, 'html.parser')
     results = []
-    for g in soup.find_all('div', class_='g'):
+    for g in soup.find_all('div', class_='g-title'):
         anchors = g.find_all('a')
         if anchors:
             link = anchors[0]['href']
@@ -23,8 +23,8 @@ def google(query, proxies):
             item = {'title': title, 'link': link}
             results.append(item)
 
-    for r in results:
-        print(r['link'])
+    # for r in results:
+    #     print(r['link'])
     return results
 
 def scrape_text(url, proxies) -> str:

@@ -141,6 +141,10 @@
 
 }
 
+div#component-1 {
+    margin-top: 20px;
+}
+
 .codehilite .hll { background-color: #6e7681 }
 .codehilite .c { color: #8b949e; font-style: italic } /* Comment */
 .codehilite .err { color: #f85149 } /* Error */
