@@ -30,6 +30,7 @@ def main():
     description += "</br></br>虚空终端使用说明: 点击虚空终端, 然后根据提示输入指令, 再次点击虚空终端"
     description += "</br></br>如何保存对话: 点击保存当前的对话按钮"
     description += "</br></br>如何语音对话: 请阅读Wiki"
+    description += "</br></br>客服微信: paopao6d"
 
     # 问询记录, python 版本建议3.9+（越新越好）
     import logging, uuid
