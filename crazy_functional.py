@@ -196,13 +196,13 @@ def get_crazy_functions():
             "Info": "查看历史上的今天事件 | 不需要输入参数",
             "Function": HotReload(高阶功能模板函数)
         },
-        "精准翻译PDF论文": {
-            "Group": "学术",
-            "Color": "stop",
-            "AsButton": True,  
-            "Info": "精准翻译PDF论文为中文 | 输入参数为路径",
-            "Function": HotReload(批量翻译PDF文档)
-        },
+        # "精准翻译PDF论文": {
+        #     "Group": "学术",
+        #     "Color": "stop",
+        #     "AsButton": True,  
+        #     "Info": "精准翻译PDF论文为中文 | 输入参数为路径",
+        #     "Function": HotReload(批量翻译PDF文档)
+        # },
         # "询问多个GPT模型": {
         #     "Group": "对话",
         #     "Color": "stop",
@@ -226,7 +226,7 @@ def get_crazy_functions():
         "理解PDF文档内容 （模仿ChatPDF）": {
             "Group": "学术",
             "Color": "stop",
-            "AsButton": True,  # 加入下拉菜单中
+            "AsButton": False,  # 加入下拉菜单中
             "Info": "理解PDF文档的内容并进行回答 | 输入参数为路径",
             "Function": HotReload(理解PDF文档内容标准文件输入)
         },
@@ -285,36 +285,36 @@ def get_crazy_functions():
                 "Group": "学术",
                 "Color": "stop",
                 "AsButton": False,  # 加入下拉菜单中
-                # "Info": "下载arxiv论文并翻译摘要 | 输入参数为arxiv编号如1812.10695",
+                "Info": "下载arxiv论文并翻译摘要 | 输入参数为arxiv编号如1812.10695",
                 "Function": HotReload(下载arxiv论文并翻译摘要)
             }
         })
     except:
         print('Load function plugin failed')
 
-    try:
-        from crazy_functions.联网的ChatGPT import 连接网络回答问题
-        function_plugins.update({
-            "连接网络回答问题（输入问题后点击该插件，需要访问谷歌）": {
-                "Group": "对话",
-                "Color": "stop",
-                "AsButton": True,  # 加入下拉菜单中
-                # "Info": "连接网络回答问题（需要访问谷歌）| 输入参数是一个问题",
-                "Function": HotReload(连接网络回答问题)
-            }
-        })
-        # from crazy_functions.联网的ChatGPT_bing版 import 连接bing搜索回答问题
-        # function_plugins.update({
-        #     "连接网络回答问题（中文Bing版，输入问题后点击该插件）": {
-        #         "Group": "对话",
-        #         "Color": "stop",
-        #         "AsButton": False,  # 加入下拉菜单中
-        #         "Info": "连接网络回答问题（需要访问中文Bing）| 输入参数是一个问题",
-        #         "Function": HotReload(连接bing搜索回答问题)
-        #     }
-        # })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.联网的ChatGPT import 连接网络回答问题
+    #     function_plugins.update({
+    #         "连接网络回答问题（输入问题后点击该插件，需要访问谷歌）": {
+    #             "Group": "对话",
+    #             "Color": "stop",
+    #             "AsButton": False,  # 加入下拉菜单中
+    #             "Info": "连接网络回答问题（需要访问谷歌）| 输入参数是一个问题",
+    #             "Function": HotReload(连接网络回答问题)
+    #         }
+    #     })
+    #     # from crazy_functions.联网的ChatGPT_bing版 import 连接bing搜索回答问题
+    #     # function_plugins.update({
+    #     #     "连接网络回答问题（中文Bing版，输入问题后点击该插件）": {
+    #     #         "Group": "对话",
+    #     #         "Color": "stop",
+    #     #         "AsButton": False,  # 加入下拉菜单中
+    #     #         "Info": "连接网络回答问题（需要访问中文Bing）| 输入参数是一个问题",
+    #     #         "Function": HotReload(连接bing搜索回答问题)
+    #     #     }
+    #     # })
+    # except:
+    #     print('Load function plugin failed')
 
     # try:
     #     from crazy_functions.解析项目源代码 import 解析任意code项目
@@ -384,7 +384,7 @@ def get_crazy_functions():
             "数学动画生成（Manim）": {
                 "Group": "对话",
                 "Color": "stop",
-                "AsButton": False,
+                "AsButton": True,
                 "Info": "按照自然语言描述生成一个动画 | 输入参数是一段话",
                 "Function": HotReload(动画生成)
             }
@@ -407,20 +407,20 @@ def get_crazy_functions():
     # except:
     #     print('Load function plugin failed')
 
-    try:
-        from crazy_functions.Langchain知识库 import 知识库问答
-        function_plugins.update({
-            "构建知识库（先上传文件素材,再运行此插件）": {
-                "Group": "对话",
-                "Color": "stop",
-                "AsButton": True,
-                "AdvancedArgs": True,
-                "ArgsReminder": "此处待注入的知识库名称id, 默认为default。文件进入知识库后可长期保存。可以通过再次调用本插件的方式，向知识库追加更多文档。",
-                "Function": HotReload(知识库问答)
-            }
-        })
-    except:
-        print('Load function plugin failed')
+    # try:
+    #     from crazy_functions.Langchain知识库 import 知识库问答
+    #     function_plugins.update({
+    #         "构建知识库（先上传文件素材,再运行此插件）": {
+    #             "Group": "对话",
+    #             "Color": "stop",
+    #             "AsButton": True,
+    #             "AdvancedArgs": True,
+    #             "ArgsReminder": "此处待注入的知识库名称id, 默认为default。文件进入知识库后可长期保存。可以通过再次调用本插件的方式，向知识库追加更多文档。",
+    #             "Function": HotReload(知识库问答)
+    #         }
+    #     })
+    # except:
+    #     print('Load function plugin failed')
 
     # try:
     #     from crazy_functions.Langchain知识库 import 读取知识库作答
